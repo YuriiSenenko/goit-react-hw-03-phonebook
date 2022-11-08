@@ -1,5 +1,6 @@
 import React from 'react';
 import css from './ContactList.module.css';
+import PropTypes from 'prop-types';
 
 const ContactList = ({ renderContacts, visibleContacts }) => {
   return (
@@ -7,3 +8,8 @@ const ContactList = ({ renderContacts, visibleContacts }) => {
   );
 };
 export default ContactList;
+
+ContactList.propTypes = {
+  renderContacts: PropTypes.func,
+  visibleContacts: PropTypes.array,
+};

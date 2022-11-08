@@ -13,7 +13,6 @@ export class App extends React.Component {
   };
 
   //! Життєві цикли
-
   // Перевіряє чи є щось в localStorage, якщо є, то дістає і записує початкові значення в state
   componentDidMount() {
     const contacts = localStorage.getItem('contacts');
@@ -67,7 +66,6 @@ export class App extends React.Component {
     const search = contacts.filter(contact =>
       contact.name.toLowerCase().includes(normalizedFilter)
     );
-    // console.log(search);
     return search;
   };
 
